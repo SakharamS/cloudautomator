@@ -18,6 +18,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   height: inherit;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 </style>
 </head>
 <body>
@@ -55,11 +60,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b></b></h4>
-  <a href="#" class="w3-bar-item w3-button w3-theme-l1">Photo</a>
-  <a href="#" class="w3-bar-item w3-button w3-hover-white">Title</a>
+  <a href="#" class="w3-bar-item w3-button">
+    <img src="images/Profile_Photo.jpg" class="w3-round">
+  </a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-white">Cloud Consultant</a>
   <a href="#" class="w3-bar-item w3-button w3-hover-white">Primary Skills</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-white w3-medium">Cloud (Azure & AWS), Terraform, Kubernetes, Scripting </a>
   <a href="#" class="w3-bar-item w3-button w3-hover-white">Secondary Skills</a>
-  <a href="#" class="w3-bar-item w3-button w3-hover-white">Resume</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-white w3-medium">Cloud (GCP), Database, </a>
+  <a href="common/resume.html" class="w3-bar-item w3-button w3-hover-white">Resume</a>
 </nav>
 
 
@@ -73,10 +82,38 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <!-- Blog 1 -->
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Blog 1</h1>
+      <a href="./2022/11/2022-11-19_kubernetes_power_tools.html" class="w3-text-teal w3-xlarge">Kubernetes Power Tools</a>
       <p>
-        This blog is about blog1.
+        Date: 2022/11/19 <br>
+        As a DevOps or SRE engineers, we have to work with mulitple clusters on daily basis. Working with kubectl cli might not be as efficient, so this article summarizes power tools like kubectl, kubens, etc for Kubernetes to improve efficiency.
       </p>
+    </div>
+  </div>
+
+<!-- Blog 2 -->
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Blog 2</h1>
+      <p>This blog is about blog1.</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Blog 3</h1>
+      <p>This blog is about blog3</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-blue" href="#">2</a>
+      <a class="w3-button w3-hover-blue" href="#">3</a>
+      <a class="w3-button w3-hover-blue" href="#">4</a>
+      <a class="w3-button w3-hover-blue" href="#">5</a>
+      <a class="w3-button w3-hover-blue" href="#">»</a>
     </div>
   </div>
 

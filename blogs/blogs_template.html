@@ -18,6 +18,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   height: inherit;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+} 
+
+th,td {
+  border: 1px solid black;
+}
+
+table.a {
+  table-layout: auto;
+  width: 300px;
+}
+
 </style>
 </head>
 <body>
@@ -27,9 +46,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   <div class="w3-bar w3-theme w3-large">
     <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_rightopen()"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hover-grey w3-xlarge">CloudUtsuk</a>
-    <a href="common/contactme.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hover-white">Contact Me</a>
-    <a href="common/blogs.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hover-white">Blogs</a>
+    <a href="../../../index.html" class="w3-bar-item w3-button w3-hover-grey w3-xlarge">CloudUtsuk</a>
+    <a href="../../../common/contactme.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hover-white">Contact Me</a>
+    <a href="../../../blogs/blogs.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-hover-white">Blogs</a>
   </div>
 </div>
 
@@ -39,13 +58,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b></b></h4>
-  <a href="azure/azure.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">Azure</a>
-  <a href="aws/aws.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">AWS</a>
-  <a href="gcp/gcp.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">GCP</a>
-  <a href="terraform/terraform.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">Terraform</a>
-  <a href="kubernetes/kubernetes.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">Kubernetes</a>
-  <a href="devops/devops.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">DevOps</a>
-  <a href="monitoring/monitoring.html"  class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">Monitoring</a>
+  <a href="../../../azure/azure.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">Azure</a>
+  <a href="../../../aws/aws.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">AWS</a>
+  <a href="../../../gcp/gcp.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">GCP</a>
+  <a href="../../../terraform/terraform.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">Terraform</a>
+  <a href="../../../kubernetes/kubernetes.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">Kubernetes</a>
+  <a href="../../../devops/devops.html" class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">DevOps</a>
+  <a href="../../../monitoring/monitoring.html"  class="w3-bar-item w3-button w3-hover-blue w3-right" href="#">Monitoring</a>
 </nav>
 
 
@@ -55,11 +74,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b></b></h4>
-  <a href="#" class="w3-bar-item w3-button w3-theme-l1">Photo</a>
-  <a href="#" class="w3-bar-item w3-button w3-hover-white">Title</a>
+  <a href="#" class="w3-bar-item w3-button">
+    <img src="../../../images/Profile_Photo.jpg" class="w3-round">
+  </a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-white">Cloud Consultant</a>
   <a href="#" class="w3-bar-item w3-button w3-hover-white">Primary Skills</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-white w3-medium">Cloud (Azure & AWS), Terraform, Kubernetes, Scripting </a>
   <a href="#" class="w3-bar-item w3-button w3-hover-white">Secondary Skills</a>
-  <a href="#" class="w3-bar-item w3-button w3-hover-white">Resume</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-white w3-medium">Cloud (GCP), Database, </a>
+  <a href="../../../common/resume.html" class="w3-bar-item w3-button w3-hover-white">Resume</a>
 </nav>
 
 
@@ -71,17 +94,59 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <div class="w3-main" style="margin-left:250px;margin-right:250px">
 
 <!-- Blog 1 -->
-  <div class="w3-row w3-padding-64">
+<div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Blog 1</h1>
+      <a class="w3-text-teal w3-xlarge">Blog Title</a>
       <p>
-        This blog is about blog1.
+        Blog Description
       </p>
     </div>
+</div>
+
+  <!-- Sample Code Snippet -->
+  <div class="w3-code notranslate">
+    resource "aws_instance" "web" {
+    <br># ... 
+    <br>
+    <br>provisioner "local-exec" { 
+    <br>    command = "echo The server's IP address is ${self.private_ip}" 
+    <br>} 
+    <br>} 
+   </div>
+
+   <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal w3-xlarge">Heading</h1>
+    <p>
+      Description
+    </p>
   </div>
 
+
+  <!-- Table -->
+  <div class="w3-container">
+  <h1 class="w3-text-teal w3-large">Table Heading</h1>
+  <table class="a w3-bordered">
+    <tr>
+      <th>Sr. No</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Johny</td>
+      <td>Walker</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Black</td>
+        <td>Dog</td>
+      </tr>
+   </table>
+   <br>
+   </div>
+
   <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
+     <div class="w3-container w3-theme-l2 w3-padding-32">
       <h4>CloudUtsuk</h4>
     </div>
 
